@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+      height: 100%;
+      width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://media.licdn.com/dms/image/v2/D5612AQHuPQpGo136hA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1720723291059?e=2147483647&v=beta&t=3iqcQhN7n8ArrFMBcy0ACE3314yF7qrqLf4sDQacR_g);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+ 
+    
+}
+#container{
+      height: auto;
+      width: auto;
+      padding: 10px 40px;
+      background-color: #0d0d0d;
+      color: white;
+      z-index: 1;
+    border-radius: 10px;
+    opacity: 1;    
+}
+#input{
+       display: flex;
+       gap: 10px;
+       justify-content: center;
+       margin-top: 20px;
+}
+input{
+    padding: 4px 7px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+button{
+    padding: 3px 6px;
+    border-radius: 4px;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.405);
+    color: white;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 5px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#error{
+    color: red;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 7px;
+    display: none;
+}
+#name{
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 255, 0.54);
+    padding: 7px;
+    border-radius:7px;
+    margin-top: 10px;
+    color: white;
+}
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey background */
+    border-top: 4px solid #3498db; /* Blue spinner */
+    border-radius: 50%; /* Makes it a circle */
+    width: 40px; /* Width of the loader */
+    height: 40px; /* Height of the loader */
+    animation: spin 1s linear infinite; /* Animation */
+    position: relative;
+   left: 40%;
+   margin-top: 50%;
+  }
+  
+  /* Keyframes for spinning */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
